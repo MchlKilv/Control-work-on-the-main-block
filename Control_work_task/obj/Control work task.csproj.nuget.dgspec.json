@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yadja\\Desktop\\Ctrl work\\Control work task\\Control work task.csproj": {}
+    "C:\\Users\\yadja\\Desktop\\Ctrl work\\Control_work_task\\Control work task.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yadja\\Desktop\\Ctrl work\\Control work task\\Control work task.csproj": {
+    "C:\\Users\\yadja\\Desktop\\Ctrl work\\Control_work_task\\Control work task.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yadja\\Desktop\\Ctrl work\\Control work task\\Control work task.csproj",
+        "projectUniqueName": "C:\\Users\\yadja\\Desktop\\Ctrl work\\Control_work_task\\Control work task.csproj",
         "projectName": "Control work task",
-        "projectPath": "C:\\Users\\yadja\\Desktop\\Ctrl work\\Control work task\\Control work task.csproj",
+        "projectPath": "C:\\Users\\yadja\\Desktop\\Ctrl work\\Control_work_task\\Control work task.csproj",
         "packagesPath": "C:\\Users\\yadja\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yadja\\Desktop\\Ctrl work\\Control work task\\obj\\",
+        "outputPath": "C:\\Users\\yadja\\Desktop\\Ctrl work\\Control_work_task\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yadja\\AppData\\Roaming\\NuGet\\NuGet.Config"

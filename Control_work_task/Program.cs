@@ -2,8 +2,43 @@
 // длина которых меньше, либо равна 3 символам.
 // Первоначальный массив можно ввести с клавиатуры, либо задать на старте выполнения алгоритма.
 // При решении не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами.
-
 // Примеры:
 // ["Hello", "2", "world", ":-)"] → ["2", ":-)"]
 // ["1234", "1567", "-2", "computer science"] → ["-2"]
 // ["Russia", "Denmark", "Kazan"] → []
+
+string[] inputArray = new string[] { "Hello", "2", "world", ":-)" };
+//string[] inputArray = new string[] { "1234", "1567", "-2", "computer science" };
+//string[] inputArray = new string[] { "Russia", "Denmark", "Kazan" };
+
+string[] SelectionByLength(string[] inputArray, int maxLength)
+{
+    int count = 0;
+
+    
+    for (int i = 0; i < inputArray.Length; i++)
+    {
+        if (inputArray[i].Length <= maxLength)
+            count++;
+    }
+
+    
+    string[] resultArray = new string[count];
+    int index = 0;
+
+    
+    for (int i = 0; i < inputArray.Length; i++)
+    {
+        if (inputArray[i].Length <= maxLength)
+        {
+            resultArray[index] = inputArray[i];
+            index++;
+        }
+    }
+
+    return resultArray;
+}
+
+string[] resultArray = SelectionByLength(inputArray, 3);
+Console.WriteLine($"Исходный массив: ['{string.Join("', '", inputArray)}']");
+Console.WriteLine($"Полученный массив: ['{string.Join("', '", SelectionByLength(resultArray, 3))}']");
