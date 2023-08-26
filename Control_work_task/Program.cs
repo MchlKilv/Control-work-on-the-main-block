@@ -7,29 +7,26 @@
 // ["1234", "1567", "-2", "computer science"] → ["-2"]
 // ["Russia", "Denmark", "Kazan"] → []
 
-string[] inputArray = new string[] { "Hello", "2", "world", ":-)" };
+string[] inputArray = new string[] { "Hello", "2", "world", ":-)", "abc" };
 //string[] inputArray = new string[] { "1234", "1567", "-2", "computer science" };
 //string[] inputArray = new string[] { "Russia", "Denmark", "Kazan" };
 
-string[] resultArray = SelectionByLength(inputArray, 3);
+string[] resultArray = SelectLength(inputArray, 3);
 Console.WriteLine($"Исходный массив: ['{string.Join("', '", inputArray)}']");
-Console.WriteLine($"Полученный массив: ['{string.Join("', '", SelectionByLength(resultArray, 3))}']");
+Console.WriteLine($"Полученный массив: ['{string.Join("', '", resultArray)}']");
 
-string[] SelectionByLength(string[] inputArray, int maxLength)
+static string[] SelectLength(string[] inputArray, int maxLength)
 {
     int count = 0;
-
-    // Сначала определяем, сколько элементов у нас будет в итоговом массиве
+    // Определяем, сколько элементов у нас будет в итоговом массиве
     for (int i = 0; i < inputArray.Length; i++)
     {
         if (inputArray[i].Length <= maxLength)
             count++;
     }
-
     // Создаем новый массив с подходящими элементами
     string[] resultArray = new string[count];
     int index = 0;
-
     // Копируем подходящие элементы в новый массив
     for (int i = 0; i < inputArray.Length; i++)
     {
@@ -39,6 +36,5 @@ string[] SelectionByLength(string[] inputArray, int maxLength)
             index++;
         }
     }
-
     return resultArray;
 }
